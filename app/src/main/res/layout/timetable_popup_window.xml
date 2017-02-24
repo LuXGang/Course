@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <!--主体-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_corner_button"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="详情提示"
+            android:textColor="@color/Black"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="@dimen/common_view_height"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="课程名称"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_name_course"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.0"
+                android:text=""
+                android:maxLength="24"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:gravity="left|center"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/DividerLineGray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="@dimen/common_view_height"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="上课时间"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_time_course"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.0"
+                android:text=""
+                android:maxLength="24"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:gravity="left|center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/DividerLineGray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="@dimen/common_view_height"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="上课地点"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_address_course"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.0"
+                android:text=""
+                android:maxLength="24"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:gravity="left|center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/DividerLineGray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="@dimen/common_view_height"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="课程备注"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_comment_course"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1.0"
+                android:text=""
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:gravity="left|center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/DividerLineGray" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

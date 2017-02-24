@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 顶部带圆角 白色背景 灰色边框 无下边框 长方体 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape>
+			<solid android:color="#FFFFFF" />
+			<corners android:topLeftRadius="6dp" android:topRightRadius="6dp"
+			         android:bottomRightRadius="0.1px" android:bottomLeftRadius="0.1px" />
+			<stroke android:width="1px" android:color="@color/DividerLineGray" />
+		</shape>
+	</item>
+	<item android:top="1px" android:left="1px" android:right="1px">
+		<shape>
+			<solid android:color="#FFFFFF" />
+			<corners android:topLeftRadius="6dp" android:topRightRadius="6dp"
+			         android:bottomRightRadius="0.1px" android:bottomLeftRadius="0.1px" />
+			<stroke android:width="1px" android:color="#ffffffff" />
+		</shape>
+	</item>
+</layer-list>

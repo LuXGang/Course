@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/news_comment_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/BackgroundColor"
+	android:orientation="vertical">
+
+
+
+	<com.luxg.course.widget.pulltorefresh.PullToRefreshListView
+		android:id="@+id/news_comment_headlistvieww"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/White"
+		android:layout_above="@+id/layout_"
+		android:cacheColorHint="#00000000"
+		android:divider="@color/DividerLineGray"
+		android:dividerHeight="1px"
+		android:fadingEdge="none">
+	</com.luxg.course.widget.pulltorefresh.PullToRefreshListView>
+
+	<ImageView
+		android:id="@+id/news_comment_safa"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:src="@drawable/news_empty_safa"
+		android:visibility="gone"
+	/>
+
+	<LinearLayout
+		android:id="@+id/layout_"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/BackgroundColor"
+		android:orientation="vertical">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:background="@color/DividerLineGray"/>
+
+		<RelativeLayout
+			android:id="@+id/news_comment_submitbar"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/common_view_height"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/news_comment_submit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/news_content_submit_selector"
+				android:gravity="center"/>
+			<EditText
+				android:id="@+id/news_comment_edit"
+				style="@style/common_edt_style"
+				android:layout_width="fill_parent"
+				android:layout_height="34dp"
+				android:layout_centerVertical="true"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="5dp"
+				android:layout_toLeftOf="@+id/news_comment_submit"
+				android:background="@drawable/common_shape_edit"
+				android:drawableLeft="@drawable/news_comment_reply_image"
+				android:hint="在此输入"
+				android:maxLines="4"
+				android:paddingLeft="10dp"
+				android:textSize="14sp"
+				android:visibility="visible"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/news_content_buttom_button_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/common_view_height"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/news_comment_button"
+				android:layout_width="match_parent"
+				android:layout_height="34dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="5dp"
+				android:background="@drawable/common_shape_edit"
+				android:drawableLeft="@drawable/news_comment_reply_image"
+				android:gravity="left|center_vertical"
+				android:paddingLeft="10dp"
+				android:text="评论"
+				android:textColor="@color/AssistantGray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

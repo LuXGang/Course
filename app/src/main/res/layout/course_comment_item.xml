@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/White"
+              android:orientation="vertical"
+	>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="12dp"
+		android:gravity="center_vertical">
+
+		<com.luxg.course.widget.base.BezelImageView
+			android:id="@+id/news_comment_first_item_usericon"
+			android:layout_width="26dp"
+			android:layout_height="26dp"
+			android:background="@drawable/icon_user"
+			app:maskDrawable="@drawable/icon_user"/>
+
+		<TextView
+			android:id="@+id/news_comment_first_item_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="13dp"
+			android:layout_marginRight="13dp"
+			android:layout_toRightOf="@+id/news_comment_first_item_title"
+			android:singleLine="true"
+			android:text="hello"
+			android:textColor="@color/SpecialRed"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:id="@+id/news_comment_first_item_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/news_comment_first_item_usericon"
+			android:singleLine="true"
+			android:text="hello"
+			android:textColor="@color/AssistantGray"
+			android:textSize="14.0sp"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="12dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/news_comment_first_item_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="51dp"
+			android:layout_marginRight="10dp"
+			android:text="张铁林"
+			android:textColor="@android:color/black"
+			android:textSize="16.0sp"/>
+
+
+	</RelativeLayout>
+
+</LinearLayout>

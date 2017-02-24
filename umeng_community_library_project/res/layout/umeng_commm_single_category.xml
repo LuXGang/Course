@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/umeng_comm_topic_search_title_layout"
+        layout="@layout/umeng_commm_topic_search_title_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_group"
+        android:layout_below="@id/umeng_comm_topic_search_title_layout"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/umeng_comm_newpost"
+            android:id="@+id/umeng_comm_new"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/umeng_comm_latestreplay"
+            android:id="@+id/umeng_comm_lastreply"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/umeng_comm_recommend"
+            android:id="@+id/umeng_comm_recommend"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/umeng_comm_hot"
+            android:id="@+id/umeng_comm_hot"/>
+
+    </LinearLayout>
+    <com.umeng.comm.ui.imagepicker.widgets.RefreshLvLayout
+        android:id="@+id/umeng_comm_topic_refersh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_group" >
+
+        <ListView
+            android:id="@+id/umeng_comm_topic_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0.0sp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </com.umeng.comm.ui.imagepicker.widgets.RefreshLvLayout>
+
+    <com.umeng.commm.ui.widgets.BaseView
+        android:id="@+id/umeng_comm_baseview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/umeng_comm_topic_search_title_layout" />
+
+</RelativeLayout>

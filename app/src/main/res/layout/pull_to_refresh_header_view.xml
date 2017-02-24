@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pull_to_refresh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pull_to_refresh_pull_label"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pull_to_refresh_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dip"
+            android:textColor="@android:color/black"
+            android:textSize="11sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_progress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="20dip"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/pull_to_refresh_arrow"
+        android:layout_marginLeft="31dip"
+        android:layout_marginRight="20dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/pull_to_refresh_image"
+        android:scaleType="fitXY"
+        android:src="@drawable/pull_to_refresh_top_line" />
+
+</RelativeLayout>

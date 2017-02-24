@@ -1,0 +1,106 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="SZTVTheme" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        <item name="android:textViewStyle">@style/MyTextView</item>
+    </style>
+
+    <style name="MyEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorHint">@color/AssistantGray</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="MyTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/AssistantGray</item>
+    </style>
+    <!--TabLayout的属性-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/SpecialBlue</item>
+        <item name="tabTextColor">@color/Black</item>
+        <item name="tabSelectedTextColor">@color/SpecialBlue</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!-- 用户中心编辑框样式 -->
+    <style name="personal_edt_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorHint">@color/AssistantGray</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <!-- 用户中心蓝色编辑框外框样式 -->
+    <style name="personal_edittext_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">#57bdeb</item>
+    </style>
+    <!-- 用户中心蓝色编辑框内部白色样式 -->
+    <style name="personal_edittext_in_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="personal_transparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!-- 通用edit样式 -->
+    <style name="common_edt_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorHint">@color/AssistantGray</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="splashStyle" parent="@style/SZTVTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topic_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:gravity="left">
+
+        <LinearLayout
+            android:id="@+id/topic_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_comm_title_back"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/umeng_socialize_login" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/login_back_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/umeng_comm_topic_list"
+            android:textColor="@color/SpecialBlue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umeng_comm_dimen_1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/umeng_comm_divider" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/viewer"
+        android:name="com.umeng.commm.ui.fragments.CategoryTopicFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topic_action_bar" />
+</RelativeLayout>

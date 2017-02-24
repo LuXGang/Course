@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container_nonet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/body_color">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/titleview_height_half">
+
+        <ImageView
+            android:id="@+id/img_404"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_404_2"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_404"
+            android:layout_centerHorizontal="true"
+            android:text="还我网络..."
+            android:textColor="#7d99a5"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="5dp"
+            android:text="网络你去了哪里？"
+            android:textColor="#7d99a5"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_404_stroke_selector"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:text="再试一次"
+            android:textColor="#57bdeb"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

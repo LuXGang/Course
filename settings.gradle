@@ -1,0 +1,2 @@
+include ':app'
+include ':umeng_community_library_project'

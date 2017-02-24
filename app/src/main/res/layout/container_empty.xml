@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/body_color">
+
+    <ImageView
+        android:id="@+id/img_404"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_404_3"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_404"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/titleview_height_half"
+        android:text="您的搜索不存在！"
+        android:textColor="#7d99a5"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

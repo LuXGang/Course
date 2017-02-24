@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="上午"
+        android:background="@drawable/round_background_blue"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <LinearLayout
+            android:id="@+id/ll_first"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timetable_view_height"
+            android:background="@color/White"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="第一大节"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_first_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <LinearLayout
+            android:id="@+id/ll_second"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timetable_view_height"
+            android:background="@color/White"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="第二大节"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_second_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_second_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="下午"
+            android:background="@drawable/round_background_blue"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <LinearLayout
+            android:id="@+id/ll_third"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timetable_view_height"
+            android:background="@color/White"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="第三大节"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_third_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_third_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <LinearLayout
+            android:id="@+id/ll_fourth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timetable_view_height"
+            android:background="@color/White"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="第四大节"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_fourth_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_fourth_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="晚上"
+            android:background="@drawable/round_background_blue"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+        <LinearLayout
+            android:id="@+id/ll_fifth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timetable_view_height"
+            android:background="@color/White"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="晚间自习"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_fifth_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_fifth_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DividerLineGray" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_comm_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/umeng_comm_feed_list_bg"
+    android:layout_height="match_parent">
+    <!--<ViewStub-->
+        <!--android:id="@+id/umeng_comm_linear_layout_ll"-->
+        <!--android:inflatedId="@+id/umeng_comm_linear_layout_ll_vs"-->
+        <!--android:layout="@layout/umeng_comm_hotview_view_stub"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+    <!-- 消息流列表 -->
+
+    <com.umeng.comm.ui.imagepicker.widgets.RefreshLvLayout
+        android:id="@+id/umeng_comm_swipe_layout"
+        android:layout_width="fill_parent"
+        android:paddingTop="8dp"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/umeng_comm_feed_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/umeng_comm_feed_list_bg"
+            android:dividerHeight="@dimen/umeng_comm_dimen_16px"
+            android:fadingEdgeLength="0.0sp"
+            android:fastScrollEnabled="false"
+            android:headerDividersEnabled="false"
+            android:animateLayoutChanges="true"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </com.umeng.comm.ui.imagepicker.widgets.RefreshLvLayout>
+
+    <!-- 发布feed按钮 -->
+
+    <ImageView
+        android:id="@+id/umeng_comm_new_post_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/umeng_comm_new_post"
+        android:src="@drawable/umeng_comm_new_post_btn_style" />
+    <!-- 评论布局 -->
+
+    <include
+        android:id="@+id/umeng_comm_comment_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        layout="@layout/umeng_commm_comment_layout"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+</FrameLayout>
+</LinearLayout>

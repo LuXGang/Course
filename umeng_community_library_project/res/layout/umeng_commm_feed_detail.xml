@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_comm_feed_detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/umeng_comm_white_color">
+
+
+    <RelativeLayout
+        android:id="@+id/umeng_comm_feed_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/umeng_comm_dimen_100px">
+
+        <LinearLayout
+            android:id="@+id/umeng_comm_title_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/umeng_comm_dimen_100px"
+                android:layout_height="@dimen/umeng_comm_dimen_100px"
+                android:background="@drawable/umeng_comm_title_back"
+                android:scaleType="centerInside"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帖子详情"
+            android:textColor="@color/SpecialBlue"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/umeng_comm_title_more_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+                android:layout_marginRight="@dimen/umeng_comm_dimen_30px"
+                android:src="@drawable/umeng_comm_feed_detail_more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/umeng_comm_title_favorite_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/umeng_comm_title_more_btn"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/umeng_comm_favourite_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+                android:layout_marginRight="@dimen/umeng_comm_dimen_30px"
+                android:src="@drawable/umeng_comm_feed_detail_favorite_selector" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/umeng_comm_feed_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/umeng_comm_dimen_1px"
+        android:layout_below="@id/umeng_comm_feed_title_layout"
+        android:background="@color/umeng_comm_feed_detail_divider" />
+
+    <!-- fragment container -->
+
+    <FrameLayout
+        android:id="@+id/umeng_comm_feed_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/umeng_comm_feed_title_line" />
+
+    <com.umeng.commm.ui.widgets.BaseView
+        android:id="@+id/umeng_comm_baseview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umeng_comm_feed_title_line" />
+
+</RelativeLayout>

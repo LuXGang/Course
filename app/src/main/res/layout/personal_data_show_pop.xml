@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#b0000000"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/persinal_data_pop_cancel"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/persinal_data_pop_camera"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/common_view_height"
+			android:background="@drawable/personal_shape_top_corner_no_bottom_line"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="拍照"
+				android:textColor="@color/common_text_black"
+				android:textSize="18sp"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/persinal_data_pop_gallery"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/common_view_height"
+			android:background="@drawable/personal_shape_bottom_corner_no_top_line"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="从相册选择"
+				android:textColor="@color/common_text_black"
+				android:textSize="18sp"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/persinal_data_pop_cancel"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/common_view_height"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/personal_shape_corner_button"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="取消"
+			android:textColor="@color/common_text_black"
+			android:textSize="18sp"/>
+	</RelativeLayout>
+</RelativeLayout>

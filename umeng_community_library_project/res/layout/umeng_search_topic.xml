@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/umeng_commm_topic_search_title_bar" />
+
+    <!-- <include layout="@layout/umeng_comm_divide_line" /> -->
+
+    <RelativeLayout
+        android:id="@+id/umeng_comm_relative_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/umeng_comm_relative_user_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scrollbars="vertical" />
+
+        <!--<include-->
+            <!--android:id="@+id/search_more_img_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignRight="@id/umeng_comm_relative_user_recyclerView"-->
+            <!--android:layout_toRightOf="@id/umeng_comm_relative_user_recyclerView"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--layout="@layout/umeng_comm_relative_user_gallery_item" />-->
+
+        <!--<EmptyView-->
+            <!--android:id="@+id/umeng_comm_user_empty"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerInParent="true" />-->
+    </RelativeLayout>
+
+    <!--<include layout="@layout/umeng_comm_divide_line" />-->
+
+    <!--<include layout="@layout/umeng_comm_feeds_frgm_layout" />-->
+
+    <!--<EmptyView-->
+        <!--android:id="@+id/umeng_comm_feed_empty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true" />-->
+
+</LinearLayout>

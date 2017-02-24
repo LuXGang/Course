@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widgets="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/umeng_comm_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <!-- Feed内容视图 -->
+
+    <include
+        android:id="@+id/umeng_comm_feed_content_layout"
+        layout="@layout/umeng_commm_feed_detail_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/umeng_comm_feedfrag_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umeng_comm_feed_content_layout"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_34px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/umeng_comm_like_btn"
+            android:layout_width="@dimen/umeng_comm_dimen_170px"
+            android:layout_height="@dimen/umeng_comm_dimen_60px"
+            android:background="@drawable/umeng_comm_feed_detail_yellow_selector"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/umeng_comm_feed_detail_like_selector" />
+
+            <TextView
+                android:id="@+id/umeng_comm_like_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+                android:text="40"
+                android:textColor="@drawable/umeng_comm_feed_detail_tv_yellow_selector"
+                android:textSize="@dimen/umeng_comm_text_24px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/umeng_comm_comment_btn"
+            android:layout_width="@dimen/umeng_comm_dimen_170px"
+            android:layout_height="@dimen/umeng_comm_dimen_60px"
+            android:layout_marginLeft="@dimen/umeng_comm_dimen_30px"
+            android:background="@drawable/umeng_comm_feed_detail_yellow_selector"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/umeng_comm_feed_detail_comment_selector" />
+
+            <TextView
+                android:id="@+id/umeng_comm_comment_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+                android:text="40"
+                android:textColor="@drawable/umeng_comm_feed_detail_tv_yellow_selector"
+                android:textSize="@dimen/umeng_comm_text_24px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/umeng_comm_dimen_1px"
+        android:layout_below="@id/umeng_comm_feedfrag_action"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_50px"
+        android:background="@color/umeng_comm_color_de" />
+
+    <com.umeng.commm.ui.widgets.LikeView
+        android:id="@+id/umeng_comm_like_users_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/umeng_comm_feedfrag_action"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

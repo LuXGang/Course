@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/umeng_comm_no_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/umeng_comm_instrucment"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="#a5a5a5"
+            android:text="您登录后，服务器君才知道您关注的话题哦～"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/umeng_comm_tologin"
+            android:background="@color/umeng_comm_title"
+            android:textColor="@color/umeng_comm_white_color"
+            android:layout_below="@id/umeng_comm_instrucment"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/umeng_comm_login_quick"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/umeng_comm_ok_login"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/umeng_comm_topic_search_title_layout"
+            layout="@layout/umeng_commm_topic_search_title_bar"
+            />
+
+        <com.umeng.comm.ui.imagepicker.widgets.RefreshLvLayout
+            android:id="@+id/umeng_comm_topic_refersh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/umeng_comm_topic_search_title_layout" >
+
+            <ListView
+                android:id="@+id/umeng_comm_topic_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0.0sp"
+                android:fastScrollEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+        </com.umeng.comm.ui.imagepicker.widgets.RefreshLvLayout>
+
+        <com.umeng.commm.ui.widgets.BaseView
+            android:id="@+id/umeng_comm_baseview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/umeng_comm_topic_search_title_layout" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

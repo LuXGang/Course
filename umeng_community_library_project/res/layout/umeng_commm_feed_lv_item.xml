@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/umeng_comm_dimen_16px"
+    android:layout_marginRight="@dimen/umeng_comm_dimen_16px"
+    android:background="@drawable/umeng_comm_rounded_corner_backgroud"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/umeng_comm_dimen_18px">
+
+    <!-- feed类型,公告或者好友feed -->
+
+    <ImageView
+        android:id="@+id/umeng_comm_feed_item_announce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/umeng_comm_discuss_announce" />
+
+    <ImageView
+        android:id="@+id/umeng_comm_feed_favorite_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/umeng_comm_dimen_20px"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_28px"
+        android:src="@drawable/umeng_comm_feed_detail_favorite_selector"
+        android:visibility="gone" />
+
+    <com.umeng.commm.ui.emoji.EmojiTextView
+        android:id="@+id/umeng_comm_feed_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+        android:layout_marginRight="@dimen/umeng_comm_dimen_20px"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_28px"
+        android:layout_toLeftOf="@id/umeng_comm_feed_favorite_btn"
+        android:layout_toRightOf="@id/feed_type_img_btn"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/umeng_comm_color_33"
+        android:textSize="@dimen/umeng_comm_text_32px" />
+
+    <ImageView
+        android:id="@+id/feed_type_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/umeng_comm_feed_title"
+        android:layout_marginBottom="@dimen/umeng_comm_dimen_6px"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+        android:layout_toRightOf="@+id/feed_top_img_btn"
+        android:contentDescription="@string/umeng_comm_desc"
+        android:src="@drawable/umeng_comm_feed_item_essential"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/feed_top_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/umeng_comm_feed_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/umeng_comm_dimen_6px"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_20px"
+        android:contentDescription="@string/umeng_comm_desc"
+        android:src="@drawable/umeng_comm_feed_item_essential" />
+
+
+    <!-- 头像右边的内容布局 -->
+    <!-- 用户头像、文本、时间、图片的整体布局 -->
+
+    <TextView
+        android:id="@+id/umeng_comm_msg_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umeng_comm_feed_title"
+        android:layout_marginBottom="@dimen/umeng_comm_dimen_28px"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_20px"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_14px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxWidth="@dimen/umeng_comm_dimen_320px"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/umeng_comm_color_a5"
+        android:textSize="@dimen/umeng_comm_text_24px" />
+
+
+    <TextView
+        android:id="@+id/umeng_comm_msg_time_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/umeng_comm_msg_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+        android:layout_toRightOf="@id/umeng_comm_msg_user_name"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="发布于"
+        android:textColor="@color/umeng_comm_color_a5"
+        android:textSize="@dimen/umeng_comm_text_24px" />
+
+    <TextView
+        android:id="@+id/umeng_comm_msg_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/umeng_comm_msg_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_10px"
+        android:layout_toRightOf="@id/umeng_comm_msg_time_des"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="15分钟前"
+        android:textColor="@color/umeng_comm_color_a5"
+        android:textSize="@dimen/umeng_comm_text_24px" />
+
+    <ViewStub
+        android:id="@+id/umeng_comm_msg_images_gv_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umeng_comm_msg_user_name"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_20px"
+        android:layout_marginRight="@dimen/umeng_comm_dimen_20px"
+        android:layout="@layout/umeng_commm_images_gv"
+        android:scrollbars="none" />
+
+
+    <TextView
+        android:id="@+id/umeng_comm_msg_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umeng_comm_msg_user_name"
+        android:layout_marginLeft="@dimen/umeng_comm_dimen_20px"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_20px"
+        android:contentDescription="@string/umeng_comm_new_post"
+        android:drawableLeft="@drawable/umeng_comm_feed_item_location"
+        android:drawablePadding="@dimen/umeng_comm_dimen_10px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxWidth="@dimen/umeng_comm_dimen_360px"
+        android:singleLine="true"
+        android:text="我也不知道是哪里"
+        android:textColor="@color/umeng_comm_color_a5"
+        android:textSize="@dimen/umeng_comm_text_24px" />
+
+
+    <LinearLayout
+        android:id="@+id/umeng_comm_feed_action_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/umeng_comm_msg_user_name"
+        android:layout_marginRight="@dimen/umeng_comm_dimen_20px"
+        android:layout_marginTop="@dimen/umeng_comm_dimen_20px"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/umeng_comm_like_tv"
+            android:layout_width="@dimen/umeng_comm_dimen_92px"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/umeng_comm_feed_item_like"
+            android:drawablePadding="@dimen/umeng_comm_dimen_10px"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/umeng_comm_color_a5"
+            android:textSize="@dimen/umeng_comm_text_24px" />
+
+        <TextView
+            android:id="@+id/umeng_comm_comment_tv"
+            android:layout_width="@dimen/umeng_comm_dimen_92px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/umeng_comm_dimen_40px"
+            android:drawableLeft="@drawable/umeng_comm_feed_item_comment"
+            android:drawablePadding="@dimen/umeng_comm_dimen_10px"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/umeng_comm_color_a5"
+            android:textSize="@dimen/umeng_comm_text_24px" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="body_color">#eaeff3</color>
+    <color name="light_gray">#cbcbcb</color>
+    <color name="gray_color">#999999</color>
+    <color name="cursor">#57bdeb</color>
+    <color name="live_bottom_gray">#666666</color>
+    <color name="allbackgroud">#f8f8f8</color>
+    <color name="secondbackgroud">#eeeeee</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_color">#57bdeb</color>
+
+ <!--    
+    下面为新版无线苏州统一颜色
+    
+    //用于重要的文字信息（标题类文字、填写文字等,如:资讯标题,用户名填写等） -->
+    <color name="Black">#000000</color>
+
+    <!-- //用于普通信息、描述性文字 （如:详细地址、二级标题等） -->
+    <color name="CommonGray">#666666</color>
+
+  <!--   //用于辅助、次要的文字信息(如:日期、提示文字等) -->
+    <color name="AssistantGray">#a0a0a0</color>
+
+    <!-- //分割线 -->
+    <color name="DividerLineGray">#cccccc</color>
+
+    <!-- //背景 -->
+    <color name="BackgroundColor">#eaeef2</color>
+
+   <!--  //白色 -->
+    <color name="White">#ffffff</color>
+<!-- 
+    
+    下面为特殊颜色值
+     -->
+    <color name="SpecialBlue">#007aff</color> <!-- //蓝色 -->
+    <color name="SpecialBluePressed">#66007aff</color><!--  //蓝色 60% 透明度 -->
+    <color name="SpecialOrange">#ff9703</color> <!-- //橙色 -->
+    <color name="SpecialRed">#f03d58</color> <!-- //红色 -->
+    <color name="SpecialGreen">#1bbc9c</color> <!-- //绿色 -->
+</resources>

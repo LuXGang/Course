@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/common_title_root"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/titleview_height"
+	android:background="@drawable/titleviewbg">
+
+	<!-- 左侧按钮 -->
+	<RelativeLayout
+		android:id="@+id/common_title_left"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true">
+
+		<ImageView
+			android:id="@+id/common_title_left_img"
+			android:layout_width="@dimen/titleview_height"
+			android:layout_height="@dimen/titleview_height"
+			android:scaleType="centerInside"
+			android:src="@drawable/titlebar_back"/>
+
+		<Button
+			android:id="@+id/common_title_right_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/titleview_height"
+			android:background="@null"
+			android:minWidth="@dimen/titleview_height"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:textColor="@android:color/white"
+			android:textSize="14sp"
+			android:visibility="gone"/>
+	</RelativeLayout>
+
+	<!-- 右边的控件 -->
+	<RelativeLayout
+		android:id="@+id/common_title_right"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentRight="true">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/common_title_right_img"
+				android:layout_width="@dimen/titleview_height"
+				android:layout_height="@dimen/titleview_height"
+				android:background="@null"
+				android:minWidth="@dimen/titleview_height"
+				android:textColor="@color/SpecialBlue"
+				android:textSize="16sp"
+				android:visibility="gone"/>
+
+			<ImageButton
+				android:id="@+id/common_title_right_img2"
+				android:layout_width="@dimen/titleview_height"
+				android:layout_height="@dimen/titleview_height"
+				android:background="@null"
+				android:scaleType="centerInside"
+				android:minWidth="@dimen/titleview_height"
+				android:textColor="@android:color/white"
+				android:textSize="14sp"
+				android:visibility="gone"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<!-- title -->
+	<TextView
+		android:id="@+id/common_title_title_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_centerVertical="true"
+		android:ellipsize="marquee"
+		android:gravity="center"
+		android:shadowColor="@android:color/transparent"
+		android:singleLine="true"
+		android:textColor="@color/SpecialBlue"
+		android:textSize="@dimen/titleview_titlesize"
+		/>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				 android:orientation="vertical" 
+				 android:layout_width="fill_parent" 
+				 android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal|center_vertical"
+				 >
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				 android:orientation="vertical" 
+				 android:background="@drawable/alert"
+				 android:layout_width="fill_parent" 
+				 android:layout_height="wrap_content"  
+				 android:gravity="center_horizontal"
+				 android:layout_marginLeft="40dp" 
+				 android:layout_marginRight="40dp">
+  <TextView android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:layout_marginTop="15dp" 
+				  android:textColor="#ffffff" 
+				  android:text="About to call 323" 
+				  android:textStyle="bold" 
+				  android:textSize="17dp"
+				  android:id="@+id/dialog_title"/> 
+  <TextView android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:layout_margin="10dp" 
+				  android:gravity="center_horizontal"
+				  android:textSize="15dp"
+				  android:textColor="#ffffff" 
+				  android:text="Are you sure you want to proceed?" 
+				  android:id="@+id/dialog_message"/> 
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				  android:orientation="horizontal" 
+				  android:layout_width="fill_parent" 
+				  android:layout_height="wrap_content" 
+				 android:layout_marginTop="10dp" 
+				android:layout_marginBottom="10dp"
+				android:gravity="center_horizontal"
+				  > 
+			<Button android:layout_height="40dp" 
+			  android:layout_width="fill_parent" 
+			  android:background="@drawable/custom_button" 
+			  android:text="OK"
+			  android:textSize="17dp"
+			  android:textStyle="bold"
+			  android:textColor="@color/White"
+			  android:layout_marginRight="20dp" 
+			  android:layout_marginLeft="20dp" 
+			  android:layout_marginBottom="10dp"
+			  android:id="@+id/ok" /> 
+  </LinearLayout>
+  </LinearLayout>
+  </LinearLayout>

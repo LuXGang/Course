@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/BackgroundColor"
+              android:orientation="vertical">
+
+	<com.luxg.course.widget.base.BezelImageView
+		android:id="@+id/user_icon"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="20dp"
+		android:background="@drawable/personal_icon_user"
+		app:maskDrawable="@drawable/personal_icon_user"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:background="@color/DividerLineGray"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_view_height"
+			android:background="@color/White"
+			android:gravity="center_vertical">
+
+			<ImageView
+				android:id="@+id/icon_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:background="@drawable/personal_icon_user_gray"/>
+
+			<EditText
+				android:id="@+id/login_username"
+				style="@style/personal_edt_style"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:hint="学号"
+				android:maxLength="30"
+				android:singleLine="true"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/White">
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginLeft="10dp"
+				android:background="@color/DividerLineGray"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_view_height"
+			android:background="@color/White"
+			android:gravity="center_vertical">
+
+			<ImageView
+				android:id="@+id/icon_password"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:background="@drawable/personal_icon_password_gray"/>
+
+			<EditText
+				android:id="@+id/login_password"
+				style="@style/personal_edt_style"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:hint="密码"
+				android:maxLength="30"
+				android:password="true"
+				android:singleLine="true"/>
+		</LinearLayout>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:background="@color/DividerLineGray"/>
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/login_login"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/common_button_height"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:layout_marginTop="15dp"
+		android:background="@drawable/common_shape_button_blue_normal"
+		android:enabled="false"
+		android:text="登录"
+		android:textColor="@drawable/personal_login_text"
+		android:textSize="18sp"
+		android:textStyle="bold"/>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+
+		<TextView
+			android:id="@+id/personal_login_forget"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:clickable="true"
+			android:text="忘记密码？"
+			android:textColor="@color/CommonGray"
+			android:textSize="16sp"/>
+	</RelativeLayout>
+
+
+
+</LinearLayout>
